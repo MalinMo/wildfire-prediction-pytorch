@@ -46,9 +46,13 @@ image_transform = transforms.Compose([
         std=[0.229, 0.224, 0.225])
 ])
 
+# https://docs.streamlit.io/get-started/installation
+# https://docs.streamlit.io/develop/api-reference/text
+
 st.header("Satellite Image Wildfire Classification")
 st.subheader("Upload a satellite image")
-#https://docs.streamlit.io/develop/api-reference/widgets/st.file_uploader
+
+# https://docs.streamlit.io/develop/api-reference/widgets/st.file_uploader
 uploaded_image = st.file_uploader(
     "Upload a satellite image", type = ["jpg", "png", "jpeg"], label_visibility="collapsed"
 )
