@@ -3,10 +3,12 @@ Individual project assignment, Fördjupning i Pythonprogrammering (YH Data Scien
 
 ## Environment
 - Python 3.13.13
-- Packages: Pandas, Numpy, Matplotlib, Scikit-learn, PyTorch, Torchvision, Streamlit, Pillow, kaggelhub (see requirements.txt)
+- Packages: Pandas, Numpy, Matplotlib, Scikit-learn, PyTorch, Torchvision, Streamlit, Pillow, kagglehub (see requirements.txt)
 
 ## Data
 - Wildfire Prediction Dataset (Kaggle), downloaded automatically via kagglehub — not included in the repo
+- Requires a Kaggle API key: go to kaggle.com → Account → Create New API Token, which downloads a `kaggle.json` file.
+Place it at `~/.kaggle/kaggle.json` (or `C:\Users\<username>\.kaggle\kaggle.json` on Windows). This file is not included in the repository.
 
 ## Getting started
 ```
@@ -20,8 +22,15 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-## Run Streamlit App
+## Run
+### Streamlit app (demo)
 ```
-# try the trained model (demo app)
 streamlit run app.py
 ```
+
+### Training and evaluation
+Open wildfire_prediction.ipynb in Jupyter/JupyterLab
+
+## Rapport och presentation
+- Rapport_Uppgift2_Malin_Moisander.docx
+- Presentation_Uppgift2_Malin_Moisander.pptx
